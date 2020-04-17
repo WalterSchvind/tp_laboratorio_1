@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1587142601 source:c:\users\usuario\desktop\nueva carpeta\clase6\tp1\operacionesaritmeticas.c
+	"OperacionesAritmeticas.h"
+
+1587140691 c:\users\usuario\desktop\nueva carpeta\clase6\tp1\operacionesaritmeticas.h
+	<stdio.h>
+
+1587142601 source:c:\users\usuario\desktop\nueva carpeta\clase6\tp1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"OperacionesAritmeticas.h"
+
+1587138041 c:\users\usuario\desktop\nueva carpeta\clase6\tp1\operacionesaritmeticas.c
+	"OperacionesAritmeticas.h"
+
