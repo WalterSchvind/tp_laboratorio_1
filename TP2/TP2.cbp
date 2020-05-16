@@ -39,6 +39,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="ArraySector.h" />
+		<Unit filename="Validations.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Validations.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

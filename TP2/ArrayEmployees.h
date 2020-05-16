@@ -1,4 +1,5 @@
 #include "ArraySector.h"
+#include "Validations.h"
 #ifndef ARRAYEMPLOYEES_H_INCLUDED
 #define ARRAYEMPLOYEES_H_INCLUDED
 

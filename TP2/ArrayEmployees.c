@@ -82,10 +82,14 @@ int addEmployee(eEmployee* lista,int len,int id,char name[],char lastName[],floa
 }
 int addEmployees(eEmployee*lista,int len,eSector* listaSector,int lenSector)
 {
-    int todoOk=0;
+    int todoOk=-1;
     char seguir='s';
     int proximoId=1000;
+    int nameErr;
+    int lastNameErr;
+    int salaryErr;
     eEmployee auxEmployee;
+
 
 
     do
@@ -93,23 +97,24 @@ int addEmployees(eEmployee*lista,int len,eSector* listaSector,int lenSector)
         system("cls");
         auxEmployee.id=proximoId;
 
-        printf("Ingrese nombre: ");
-        fflush(stdin);
-        gets(auxEmployee.name);
+        nameErr=getName("Ingrese Nombre:","Error.Ingrese nombre valido.\n",4,51,2,auxEmployee.name);
 
-        printf("Ingrese apellido: ");
-        fflush(stdin);
-        gets(auxEmployee.lastName);
+        lastNameErr=getName("Ingrese Apellido:","Error.Ingrese apellido valido.\n",4,51,2,auxEmployee.lastName);
 
-        printf("Ingrese sueldo: ");
-        fflush(stdin);
-        scanf("%f",&auxEmployee.salary);
+        salaryErr=getFloat("Ingrese sueldo del empleado: ","Error Ingrese sueldo valido.\n",5,9,2,&auxEmployee.salary);
 
         auxEmployee.sector=menuSectors(listaSector,lenSector);
 
-
-
-        todoOk=addEmployee(lista,len,auxEmployee.id,auxEmployee.name,auxEmployee.lastName,auxEmployee.salary,auxEmployee.sector);
+        if(nameErr!=-1 && lastNameErr!=-1 && salaryErr!=-1)
+        {
+           addEmployee(lista,len,auxEmployee.id,auxEmployee.name,auxEmployee.lastName,auxEmployee.salary,auxEmployee.sector);
+           todoOk=0;
+        }
+        else
+        {
+         printf("Error. No se pudo agregar Empleado");
+         break;
+        }
 
 
 
@@ -184,7 +189,7 @@ void printEmployee(eEmployee x,eSector* listaSector, int lenSector)
 int printEmployees(eEmployee* lista,int len,eSector* listaSector,int lenSector)
 {
     int todoOk=-1;
-    printf("ID\tNombre\t\tApellido\t\tSueldo\t\tSector\n");
+    printf("ID\tNombre\t\tApellido\tSueldo\t\tSector\n");
     for(int i=0; i<len; i++)
     {
         if(lista[i].isEmpty==0)

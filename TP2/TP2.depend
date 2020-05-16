@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1589316620 source:c:\users\usuario\desktop\programacion\trabajospracticos\tp2\main.c
+1589647794 source:c:\users\usuario\desktop\programacion\trabajospracticos\tp2\main.c
 	<stdio.h>
 	<stdlib.h>
 	<ctype.h>
 	"ArrayEmployees.h"
 	"ArraySector.h"
 
-1589643700 source:c:\users\usuario\desktop\programacion\trabajospracticos\tp2\arrayemployees.c
+1589647718 source:c:\users\usuario\desktop\programacion\trabajospracticos\tp2\arrayemployees.c
 	<stdio.h>
 	<stdlib.h>
 	<ctype.h>
@@ -14,10 +14,11 @@
 	"ArrayEmployees.h"
 	"ArraySector.h"
 
-1589316620 c:\users\usuario\desktop\programacion\trabajospracticos\tp2\arrayemployees.h
+1589646649 c:\users\usuario\desktop\programacion\trabajospracticos\tp2\arrayemployees.h
 	"ArraySector.h"
+	"Validations.h"
 
-1589304678 source:c:\users\usuario\desktop\programacion\trabajospracticos\tp2\arraysector.c
+1589644080 source:c:\users\usuario\desktop\programacion\trabajospracticos\tp2\arraysector.c
 	<stdio.h>
 	<stdlib.h>
 	<ctype.h>
@@ -25,4 +26,16 @@
 	"ArraySector.h"
 
 1589644080 c:\users\usuario\desktop\programacion\trabajospracticos\tp2\arraysector.h
+
+1589647894 source:c:\users\usuario\desktop\programacion\trabajospracticos\tp2\validations.c
+	"Validations.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1589647104 c:\users\usuario\desktop\programacion\trabajospracticos\tp2\validations.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
 

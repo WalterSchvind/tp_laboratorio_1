@@ -20,6 +20,7 @@ int main()
     char confirma;
     int auxId;
     int flagAlta=0;
+    int errAlta;
 
 
     initEmployees(listaEmpleados,TAM);
@@ -31,8 +32,12 @@ int main()
         switch(menu())
         {
         case 1:
-            addEmployees(listaEmpleados,TAM,listaSectores,TAMSEC);
-            flagAlta=1;
+            errAlta=addEmployees(listaEmpleados,TAM,listaSectores,TAMSEC);
+            if(errAlta!=-1)
+            {
+              flagAlta=1;
+            }
+
 
             break;
         case 2:
