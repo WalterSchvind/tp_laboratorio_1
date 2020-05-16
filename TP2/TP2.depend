@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1589316620 source:c:\users\usuario\desktop\programacion\trabajospracticos\tp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"ArrayEmployees.h"
+	"ArraySector.h"
+
+1589643700 source:c:\users\usuario\desktop\programacion\trabajospracticos\tp2\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"ArrayEmployees.h"
+	"ArraySector.h"
+
+1589316620 c:\users\usuario\desktop\programacion\trabajospracticos\tp2\arrayemployees.h
+	"ArraySector.h"
+
+1589304678 source:c:\users\usuario\desktop\programacion\trabajospracticos\tp2\arraysector.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"ArraySector.h"
+
+1589644080 c:\users\usuario\desktop\programacion\trabajospracticos\tp2\arraysector.h
+
