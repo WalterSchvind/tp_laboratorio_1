@@ -150,6 +150,8 @@ int main()
         system("pause");
     }
     while(seguir =='s');
+
+    ll_deleteLinkedList(listaEmpleados);
     return 0;
 }
 
